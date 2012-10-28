@@ -16,9 +16,18 @@ public class GuessNumberGame {
 
     public String validate(String s) {
 
-        if(s.equals("1234")){
-            return "0a1b";
+        int aNumber = 0;
+        int bNumber = 0;
+
+        for(int i = 0; i < userInput.length(); i++){
+            char c  = userInput.charAt(i);
+            if(c == randomNumber.charAt(i)){
+                aNumber++;
+            }
+            else if(randomNumber.indexOf(c) != -1){
+                bNumber++;
+            }
         }
-        return "4a0b";
+        return aNumber+"a"+bNumber+"b";
     }
 }
