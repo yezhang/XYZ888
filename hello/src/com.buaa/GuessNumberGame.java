@@ -6,15 +6,13 @@
  * To change this template use File | Settings | File Templates.
  */
 public class GuessNumberGame {
-    private String input = null;
-    private String result = null;
+    private String randomNumber = null;
 
-
-    public GuessNumberGame(String s) {
-        this.input = s;
+       public GuessNumberGame(String s) {
+        this.randomNumber = s;
     }
 
-    public String validate(String s) {
+    public String validate(String userInput) {
 
         int aNumber = 0;
         int bNumber = 0;
