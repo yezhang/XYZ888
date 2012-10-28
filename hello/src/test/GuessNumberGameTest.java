@@ -48,7 +48,7 @@ public class GuessNumberGameTest {
     public void should_return_0a1b_if_input_include_one_correct_number_with_wrong_place(){
         String serverNumber = "1234";
         GuessNumberGame guessNumber = new GuessNumberGame(serverNumber);
-        String userInput = "1234";
+        String userInput = "5617";
         String result = guessNumber.validate(userInput);
         assertEquals("0a1b",result);
     }

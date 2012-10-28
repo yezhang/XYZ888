@@ -61,7 +61,7 @@
       <file leaf-file-name="GuessNumberGameTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/GuessNumberGameTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="24" selection-start="1393" selection-end="1393" vertical-scroll-proportion="0.87608695">
+            <state line="50" column="36" selection-start="1630" selection-end="1630" vertical-scroll-proportion="0.6666667">
               <folding />
             </state>
           </provider>
@@ -259,29 +259,7 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
   </component>
-  <component name="RunManager" selected="JUnit.GuessNumberGameTest.should_return_2a0b_if_input_has_only_three_correct_numbers_in_right_place">
-    <configuration default="false" name="GuessNumberGameTest.should_return_2a1b_if_input_include_three_numbers_with_two_in_right_place_and_one_with_wrong_place" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="hello" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GuessNumberGameTest" />
-      <option name="METHOD_NAME" value="should_return_2a1b_if_input_include_three_numbers_with_two_in_right_place_and_one_with_wrong_place" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.GuessNumberGameTest.should_return_0a1b_if_input_include_one_correct_number_with_wrong_place">
     <configuration default="false" name="GuessNumberGameTest.should_return_2a1b_if_input_include_three_numbers_with_two_in_right_place_and_one_in_wrong_place" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="hello" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -355,6 +333,28 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="GuessNumberGameTest" />
       <option name="METHOD_NAME" value="should_return_2a0b_if_input_has_only_three_correct_numbers_in_right_place" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="GuessNumberGameTest.should_return_0a1b_if_input_include_one_correct_number_with_wrong_place" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="hello" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GuessNumberGameTest" />
+      <option name="METHOD_NAME" value="should_return_0a1b_if_input_include_one_correct_number_with_wrong_place" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -511,11 +511,11 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.GuessNumberGameTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.GuessNumberGameTest.should_return_2a1b_if_input_include_three_numbers_with_two_in_right_place_and_one_with_wrong_place" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.GuessNumberGameTest.should_return_2a1b_if_input_include_three_numbers_with_two_in_right_place_and_one_in_wrong_place" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.GuessNumberGameTest.should_return_2a2b_if_input_has_four_correct_numbers_with_half_in_right_place" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.GuessNumberGameTest.should_return_3a0b_if_input_has_only_three_correct_numbers_in_right_place" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.GuessNumberGameTest.should_return_2a0b_if_input_has_only_three_correct_numbers_in_right_place" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.GuessNumberGameTest.should_return_2a1b_if_input_include_three_numbers_with_two_in_right_place_and_one_in_wrong_place" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.GuessNumberGameTest.should_return_2a2b_if_input_has_four_correct_numbers_with_half_in_right_place" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.GuessNumberGameTest.should_return_3a0b_if_input_has_only_three_correct_numbers_in_right_place" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.GuessNumberGameTest.should_return_2a0b_if_input_has_only_three_correct_numbers_in_right_place" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.GuessNumberGameTest.should_return_0a1b_if_input_include_one_correct_number_with_wrong_place" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -582,12 +582,12 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32872927" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32872927" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24928162" sideWeight="0.6712707" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32596686" sideWeight="0.5739943" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24928162" sideWeight="0.67403316" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32596686" sideWeight="0.5739943" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963988" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -684,7 +684,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/GuessNumberGameTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="24" selection-start="1393" selection-end="1393" vertical-scroll-proportion="0.87608695">
+        <state line="50" column="36" selection-start="1630" selection-end="1630" vertical-scroll-proportion="0.6666667">
           <folding />
         </state>
       </provider>
