@@ -43,6 +43,15 @@ public class GuessNumberGameTest {
         assertEquals("2a0b",result);
     }
 
+    //todo 1a0b
+    @Test
+    public void should_return_1a0b_if_input_has_only_three_correct_numbers_in_right_place(){
+        String serverNumber = "1234";
+        GuessNumberGame guessNumber = new GuessNumberGame(serverNumber);
+        String userInput = "1756";
+        String result = guessNumber.validate(userInput);
+        assertEquals("1a0b",result);
+    }
     //todo 0a1b
     @Test
     public void should_return_0a1b_if_input_include_one_correct_number_with_wrong_place(){
