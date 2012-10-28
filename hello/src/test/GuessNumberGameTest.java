@@ -31,4 +31,13 @@ public class GuessNumberGameTest {
         assertEquals("0a1b",result);
     }
 
+    @Test
+    public void should_return_2a1b_if_input_include_three_numbers_with_two_in_right_place_and_one_with_wrong_place(){
+        String serverNumber = "1234";
+        GuessNumberGame guessNumber = new GuessNumberGame(serverNumber);
+        String userInput = "1245";
+        String result = guessNumber.validate(userInput);
+        assertEquals("2a1b",result);
+    }
+
 }
