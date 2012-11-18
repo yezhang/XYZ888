@@ -8,7 +8,21 @@ package com.buaa.model;
  * To change this template use File | Settings | File Templates.
  */
 public class Car {
-    private String carId;
+    private String carId;//车牌号
+
+    public ParkingTicket getTicket() {
+        return ticket;
+    }
+
+    public void setTicket(ParkingTicket ticket) {
+        this.ticket = ticket;
+    }
+
+    private ParkingTicket ticket;
+
+    public Car(){
+        this.carId = "";
+    }
     public Car(String carId){
         this.carId = carId;
     }
@@ -16,4 +30,9 @@ public class Car {
     public String getCarId(){
         return this.carId;
     }
+
+    public void setCarId(String carId) {
+        this.carId = carId;
+    }
+
 }
