@@ -7,5 +7,5 @@ package com.buaa.exception;
  * Time: 下午3:55
  * To change this template use File | Settings | File Templates.
  */
-public class NoCarException extends Exception {
+public class NoCarException extends RuntimeException {
 }

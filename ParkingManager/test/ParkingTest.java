@@ -1,9 +1,6 @@
-import com.buaa.model.Car;
+import com.buaa.model.*;
 import com.buaa.exception.*;
 
-import com.buaa.model.Park;
-import com.buaa.model.ParkingBoy;
-import com.buaa.model.ParkingTicket;
 import junit.framework.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -20,12 +17,24 @@ public class ParkingTest {
     private ParkingBoy parkingBoy;
     private Car car;
 
+    SmartParkingBoy smartParkingBoy = new SmartParkingBoy();
+    Park park1 = new Park(1);
+    Park park2 = new Park(2);
+    Park park3 = new Park(2);
+    Park parkMax = new Park(3);
+
     @Before
     public void init_parking() {
         this.parkingBoy = new ParkingBoy();
         Park p = new Park(100);
         this.parkingBoy.addParkToManage(p);
         this.car = new Car("10000");
+
+        smartParkingBoy.addParkToManage(park1);
+        smartParkingBoy.addParkToManage(park2);
+        smartParkingBoy.addParkToManage(park3);
+        smartParkingBoy.addParkToManage(parkMax);
+
     }
 
     @Test
@@ -68,7 +77,7 @@ public class ParkingTest {
 
         Car myCar = parkingBoy.getCarByTicket(ticket);
         //Assert.assertEquals(c, myCar);
-        Assert.assertSame(c,myCar);
+        Assert.assertSame(c, myCar);
     }
 
     @Test(expected = NoCarException.class)
@@ -92,5 +101,23 @@ public class ParkingTest {
         }
 
         myCar = parkingBoy.getCarByTicket(ticket);
+    }
+
+    @Test
+    public void should_get_a_lot_with_max_space() {
+
+
+        Assert.assertSame(parkMax, smartParkingBoy.getParkWithMaxSpace());
+    }
+
+    @Test
+    public void should_park_a_car_in_a_lot_with_max_space() {
+        Car c = new Car("");
+        Park park = smartParkingBoy.getParkWithMaxSpace();
+
+        ParkingTicket ticket = smartParkingBoy.parkCar(c);
+//        park.hasCar(ticket);
+
+        Assert.assertEquals(true, park.hasCar(ticket));
     }
 }

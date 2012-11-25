@@ -7,5 +7,5 @@ package com.buaa.exception;
  * Time: 下午3:46
  * To change this template use File | Settings | File Templates.
  */
-public class NoSpaceParkingException extends Exception{
+public class NoSpaceParkingException extends RuntimeException{
 }

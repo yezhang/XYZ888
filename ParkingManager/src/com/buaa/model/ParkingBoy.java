@@ -16,7 +16,7 @@ import java.util.List;
  * To change this template use File | Settings | File Templates.
  */
 public class ParkingBoy implements IPark {
-    private List parksManaged;
+    protected List parksManaged;
 
     public ParkingBoy() {
         this.parksManaged = new ArrayList();
