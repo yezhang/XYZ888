@@ -2,6 +2,7 @@ package com.buaa.model;
 
 import com.buaa.exception.NoCarException;
 import com.buaa.exception.NoSpaceParkingException;
+import com.buaa.interfaces.IPark;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -13,25 +14,25 @@ import java.util.Map;
  * Time: 下午3:09
  * To change this template use File | Settings | File Templates.
  */
-public class Park {
+public class Park implements IPark {
     /*
     * 停车厂总停车位
     * */
     private int capacity = 0;
-    private Map<ParkingTicket,Car> parkingCarMap = new HashMap<ParkingTicket,Car>();
-    
-    public Park(int capacity){
+    private Map<ParkingTicket, Car> parkingCarMap = new HashMap<ParkingTicket, Car>();
+
+    public Park(int capacity) {
         this.capacity = capacity;
     }
 
     public ParkingTicket parkCar(Car car) throws NoSpaceParkingException {
-        if(getAvailableNumber() <= 0){
+        if (getAvailableNumber() <= 0) {
             throw new NoSpaceParkingException();
         }
         ParkingTicket ticket = new ParkingTicket();
         car.setTicket(ticket);
 
-        this.parkingCarMap.put(ticket,car);
+        this.parkingCarMap.put(ticket, car);
         return ticket;
     }
 
@@ -40,12 +41,19 @@ public class Park {
     }
 
     public Car getCarByTicket(ParkingTicket ticket) throws NoCarException {
-        if(this.parkingCarMap.containsKey(ticket)){
+        if (hasCar(ticket)) {
             Car car = parkingCarMap.get(ticket);
             parkingCarMap.remove(ticket);
             return car;
-        }else{
+        } else {
             throw new NoCarException();
         }
+    }
+
+    public boolean hasCar(ParkingTicket ticket){
+        if(this.parkingCarMap.containsKey(ticket)){
+            return true;
+        }
+        return false;
     }
 }
