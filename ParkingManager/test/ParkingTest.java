@@ -29,10 +29,9 @@ public class ParkingTest {
     }
 
     @Test
-    public void should_return_101_after_add_a_car() throws NoSpaceParkingException {
-        parkingBoy.parkCar(car);
-
-        Assert.assertEquals(99, parkingBoy.getAvailableNumber());
+    public void should_return_a_ticket() throws NoSpaceParkingException {
+        ParkingTicket ticket = parkingBoy.parkCar(car);
+        Assert.assertNotNull(ticket);
     }
 
     @Test
@@ -68,7 +67,8 @@ public class ParkingTest {
         ParkingTicket ticket = parkingBoy.parkCar(c);
 
         Car myCar = parkingBoy.getCarByTicket(ticket);
-        Assert.assertEquals(c, myCar);
+        //Assert.assertEquals(c, myCar);
+        Assert.assertSame(c,myCar);
     }
 
     @Test(expected = NoCarException.class)

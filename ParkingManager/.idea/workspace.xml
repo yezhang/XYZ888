@@ -58,17 +58,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ParkingTest.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/ParkingTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="48" selection-start="886" selection-end="886" vertical-scroll-proportion="0.6969697">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ParkingBoy.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/buaa/model/ParkingBoy.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -80,39 +69,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Park.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/buaa/model/Park.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="25" selection-start="1149" selection-end="1149" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IPark.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/buaa/interfaces/IPark.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="36" selection-start="479" selection-end="479" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ParkingTicket.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ParkingTicket.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/buaa/model/ParkingTicket.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="210" selection-end="210" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Car.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/buaa/model/Car.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="24" selection-start="465" selection-end="465" vertical-scroll-proportion="0.0">
+            <state line="10" column="0" selection-start="210" selection-end="210" vertical-scroll-proportion="0.4978355">
               <folding />
             </state>
           </provider>
@@ -453,6 +413,28 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="ParkingTest.should_get_original_car_by_correct_carId" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="ParkingManager" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ParkingTest" />
+      <option name="METHOD_NAME" value="should_get_original_car_by_correct_carId" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -592,12 +574,13 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="5">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.ParkingTest.should_get_original_car_by_correct_card_id" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.ParkingTest.should_get_exception_by_wrong_cardId" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.ParkingTest.should_get_exception_in_second_time_to_get_a_car" />
       <item index="3" class="java.lang.String" itemvalue="JUnit.ParkingTest" />
       <item index="4" class="java.lang.String" itemvalue="JUnit.ParkingTest.should_get_A_car_and_carNumber_minus_1" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.ParkingTest.should_get_original_car_by_correct_carId" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -726,21 +709,16 @@
         <state line="9" column="13" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/buaa/model/ParkingTicket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="210" selection-end="210" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/buaa/model/Car.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="24" selection-start="465" selection-end="465" vertical-scroll-proportion="0.0">
+        <state line="9" column="21" selection-start="199" selection-end="199" vertical-scroll-proportion="-0.74242425">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/buaa/interfaces/IPark.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="36" selection-start="479" selection-end="479" vertical-scroll-proportion="0.0">
+        <state line="16" column="36" selection-start="479" selection-end="479" vertical-scroll-proportion="0.7965368">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -749,8 +727,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/buaa/model/Park.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="25" selection-start="1149" selection-end="1149" vertical-scroll-proportion="0.0">
+        <state line="43" column="25" selection-start="1149" selection-end="1149" vertical-scroll-proportion="-0.045454547">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/ParkingTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="20" selection-start="846" selection-end="846" vertical-scroll-proportion="0.14935064">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -763,12 +750,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/ParkingTest.java">
+    <entry file="file://$PROJECT_DIR$/src/com/buaa/model/ParkingTicket.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="48" selection-start="886" selection-end="886" vertical-scroll-proportion="0.6969697">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="10" column="0" selection-start="210" selection-end="210" vertical-scroll-proportion="0.4978355">
+          <folding />
         </state>
       </provider>
     </entry>
