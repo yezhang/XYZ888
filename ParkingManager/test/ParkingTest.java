@@ -36,7 +36,7 @@ public class ParkingTest {
     }
 
     @Test
-    public void should_get_A_car_and_carNumber_minus_1() throws NoSpaceParkingException, NoCarException {
+    public void should_get_a_car_and_carNumber_minus_1() throws NoSpaceParkingException, NoCarException {
         Car A = new Car("10000");
         ParkingTicket ticket = parkingBoy.parkCar(A);
         Car B = parkingBoy.getCarByTicket(ticket);
@@ -62,7 +62,7 @@ public class ParkingTest {
     }
 
     @Test
-    public void should_get_original_car_by_correct_card_id() throws NoSpaceParkingException, NoCarException {
+    public void should_get_original_car_by_correct_carId() throws NoSpaceParkingException, NoCarException {
         Car c = new Car("");
 
         ParkingTicket ticket = parkingBoy.parkCar(c);
@@ -72,7 +72,7 @@ public class ParkingTest {
     }
 
     @Test(expected = NoCarException.class)
-    public void should_get_exception_by_wrong_cardId() throws NoSpaceParkingException, NoCarException {
+    public void should_get_exception_by_wrong_carId() throws NoSpaceParkingException, NoCarException {
         Car c = new Car("");
         ParkingTicket ticket = parkingBoy.parkCar(c);
 

@@ -61,7 +61,7 @@
       <file leaf-file-name="ParkingTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/ParkingTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="61" selection-start="2756" selection-end="2756" vertical-scroll-proportion="0.63203466">
+            <state line="35" column="48" selection-start="886" selection-end="886" vertical-scroll-proportion="0.6969697">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -136,10 +136,10 @@
         <option value="$PROJECT_DIR$/src/com/buaa/model/Parking.java" />
         <option value="$PROJECT_DIR$/src/com/buaa/model/Car.java" />
         <option value="$PROJECT_DIR$/src/com/buaa/model/ParkingTicket.java" />
-        <option value="$PROJECT_DIR$/test/ParkingTest.java" />
         <option value="$PROJECT_DIR$/src/com/buaa/interfaces/IPark.java" />
         <option value="$PROJECT_DIR$/src/com/buaa/model/Park.java" />
         <option value="$PROJECT_DIR$/src/com/buaa/model/ParkingBoy.java" />
+        <option value="$PROJECT_DIR$/test/ParkingTest.java" />
       </list>
     </option>
   </component>
@@ -765,7 +765,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/ParkingTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="61" selection-start="2756" selection-end="2756" vertical-scroll-proportion="0.63203466">
+        <state line="35" column="48" selection-start="886" selection-end="886" vertical-scroll-proportion="0.6969697">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
