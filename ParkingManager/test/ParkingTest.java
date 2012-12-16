@@ -18,15 +18,15 @@ public class ParkingTest {
     private Car car;
 
     SmartParkingBoy smartParkingBoy = new SmartParkingBoy();
-    Park park1 = new Park(1);
-    Park park2 = new Park(2);
-    Park park3 = new Park(2);
-    Park parkMax = new Park(3);
+    Parklot park1 = new Parklot(1);
+    Parklot park2 = new Parklot(2);
+    Parklot park3 = new Parklot(2);
+    Parklot parkMax = new Parklot(3);
 
     @Before
     public void init_parking() {
         this.parkingBoy = new ParkingBoy();
-        Park p = new Park(100);
+        Parklot p = new Parklot(100);
         this.parkingBoy.addParkToManage(p);
         this.car = new Car("10000");
 
@@ -56,7 +56,7 @@ public class ParkingTest {
     @Test(expected = NoSpaceParkingException.class)
     public void should_return_fail_add_car_to_no_space_parking() throws NoSpaceParkingException {
         parkingBoy = new ParkingBoy();
-        Park park = new Park(0);
+        Parklot park = new Parklot(0);
         parkingBoy.addParkToManage(park);
 
         parkingBoy.parkCar(car);
@@ -113,16 +113,11 @@ public class ParkingTest {
     @Test
     public void should_park_a_car_in_a_lot_with_max_space() {
         Car c = new Car("");
-        Park park = smartParkingBoy.getParkWithMaxSpace();
+        Parklot park = smartParkingBoy.getParkWithMaxSpace();
 
         ParkingTicket ticket = smartParkingBoy.parkCar(c);
 //        park.hasCar(ticket);
 
         Assert.assertEquals(true, park.hasCar(ticket));
     }
-<<<<<<< HEAD
-
-
-=======
->>>>>>> decce5794ab1d38c9d17aa95f37dc62432e8cc5e
 }
