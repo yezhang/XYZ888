@@ -1,5 +1,5 @@
 import com.buaa.model.Car;
-import com.buaa.model.Parklot;
+import com.buaa.model.ParkingSpace;
 import com.buaa.model.SuperParkingBoy;
 import junit.framework.Assert;
 import org.junit.After;
@@ -15,14 +15,14 @@ import org.junit.Test;
  */
 public class SuperParkingBoyTest {
     private SuperParkingBoy superParkingBoy;
-    private Parklot parkWith50PercentVacancyRate;
-    private Parklot parkWith100PercentVacancyRate;
+    private ParkingSpace parkWith50PercentVacancyRate;
+    private ParkingSpace parkWith100PercentVacancyRate;
 
     @Before
     public void setUp() {
         this.superParkingBoy = new SuperParkingBoy();
-        this.parkWith50PercentVacancyRate = new Parklot(2);
-        this.parkWith100PercentVacancyRate = new Parklot(2);
+        this.parkWith50PercentVacancyRate = new ParkingSpace(2);
+        this.parkWith100PercentVacancyRate = new ParkingSpace(2);
         this.parkWith50PercentVacancyRate.parkCar(new Car());
 
         this.superParkingBoy.addParkToManage(this.parkWith50PercentVacancyRate);
@@ -48,7 +48,7 @@ public class SuperParkingBoyTest {
 
     @Test
     public void should_park_a_car_in_a_lot_with_max_vacancy_rate() {
-       Parklot parkWithMaxVacancyRate = this.superParkingBoy.getParkWithMaxVacancyRate();
+       ParkingSpace parkWithMaxVacancyRate = this.superParkingBoy.getParkWithMaxVacancyRate();
         int availableNumber = parkWithMaxVacancyRate.getAvailableNumber();
         //parkWithMaxVacancyRate.parkCar(new Car());
         this.superParkingBoy.parkCar(new Car());

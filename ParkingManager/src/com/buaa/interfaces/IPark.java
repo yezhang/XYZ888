@@ -4,6 +4,7 @@ import com.buaa.exception.NoCarException;
 import com.buaa.exception.NoSpaceParkingException;
 import com.buaa.model.Car;
 import com.buaa.model.ParkingTicket;
+import com.buaa.model.Parklot;
 
 /**
  * Created with IntelliJ IDEA.
@@ -16,4 +17,5 @@ public interface IPark {
     public ParkingTicket parkCar(Car car) throws NoSpaceParkingException;
     public int getAvailableNumber();
     public Car getCarByTicket(ParkingTicket ticket) throws NoCarException;
+    //public Parklot getProperParklot();
 }

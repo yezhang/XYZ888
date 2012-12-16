@@ -3,6 +3,8 @@ package com.buaa.model;
 import com.buaa.exception.NoCarException;
 import com.buaa.exception.NoSpaceParkingException;
 import com.buaa.interfaces.IPark;
+import com.buaa.interfaces.IParkingStrategy;
+import com.buaa.model.strategy.CommonParkStrategy;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -17,19 +19,22 @@ import java.util.List;
  */
 public class ParkingBoy implements IPark {
     protected List parksManaged;
+    protected IParkingStrategy parkingStrategy;
+
 
     public ParkingBoy() {
         this.parksManaged = new ArrayList();
+        parkingStrategy = new CommonParkStrategy();
     }
 
-    public void addParkToManage(Parklot p) {
+    public void addParkToManage(ParkingSpace p) {
         if (parksManaged == null) {
             parksManaged = new ArrayList(0);
         }
         parksManaged.add(p);
     }
 
-    public void removeParkManaged(Parklot p) {
+    public void removeParkManaged(ParkingSpace p) {
         if (parksManaged == null) {
             return;
         }
@@ -39,18 +44,14 @@ public class ParkingBoy implements IPark {
 
     @Override
     public ParkingTicket parkCar(Car car) throws NoSpaceParkingException {
-        Iterator it = this.parksManaged.iterator();
-        Parklot p = null;
         boolean parked = false;
         ParkingTicket ticket = null;
-        while (it.hasNext()) {
-            p = (Parklot) it.next();
-            if (p.getAvailableNumber() > 0) {
-                ticket = p.parkCar(car);
-                parked = true;
-                break;
-            }
+        ParkingSpace parkingSpace = this.parkingStrategy.choose(this.parksManaged);
+        if(parkingSpace != null){
+            ticket = parkingSpace.parkCar(car);
+            parked = true;
         }
+
         if (parked == false) {
             throw new NoSpaceParkingException();
         }
@@ -61,9 +62,9 @@ public class ParkingBoy implements IPark {
     public int getAvailableNumber() {
         int availableNumber = 0;
         Iterator it = this.parksManaged.iterator();
-        Parklot p = null;
+        ParkingSpace p = null;
         while (it.hasNext()) {
-            p = (Parklot) it.next();
+            p = (ParkingSpace) it.next();
             availableNumber += p.getAvailableNumber();
         }
         return availableNumber;
@@ -72,11 +73,11 @@ public class ParkingBoy implements IPark {
     @Override
     public Car getCarByTicket(ParkingTicket ticket) throws NoCarException {
         Iterator it = this.parksManaged.iterator();
-        Parklot p = null;
+        ParkingSpace p = null;
         Car car = null;
         boolean carIsGetted = false;
         while (it.hasNext()) {
-            p = (Parklot) it.next();
+            p = (ParkingSpace) it.next();
             if(p.hasCar(ticket)){
                 car =  p.getCarByTicket(ticket);
                 carIsGetted = true;

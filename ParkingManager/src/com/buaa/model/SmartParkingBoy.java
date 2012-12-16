@@ -1,9 +1,12 @@
 package com.buaa.model;
 
 import com.buaa.exception.NoSpaceParkingException;
+import com.buaa.interfaces.IParkingStrategy;
+import com.buaa.model.strategy.SmartParkStrategy;
 
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.Iterator;
 
 /**
  * Created with IntelliJ IDEA.
@@ -13,22 +16,22 @@ import java.util.Comparator;
  * To change this template use File | Settings | File Templates.
  */
 public class SmartParkingBoy extends ParkingBoy {
+    private IParkingStrategy parkingStrategy;
 
-    public Parklot getParkWithMaxSpace(){
-        Parklot parkWithMaxAvailableNumber = (Parklot) Collections.max(this.parksManaged, new Comparator() {
-            @Override
-            public int compare(Object o1, Object o2) {
-                Parklot left = (Parklot) o1;
-                Parklot right = (Parklot) o2;
-                return left.getAvailableNumber() - right.getAvailableNumber();
-            }
-        });
+    public SmartParkingBoy() {
+        this.parkingStrategy = new SmartParkStrategy();
+    }
+
+    public ParkingSpace getParkWithMaxSpace(){
+        ParkingSpace parkWithMaxAvailableNumber = this.parkingStrategy.choose(this.parksManaged);
         return parkWithMaxAvailableNumber;
     }
-     @Override
-    public ParkingTicket parkCar(Car car) throws NoSpaceParkingException {
 
-        Parklot parkWithMaxAvailableNumber = getParkWithMaxSpace();
+    @Override
+    public ParkingTicket parkCar(Car car) throws NoSpaceParkingException {
+        Iterator it = this.parksManaged.iterator();
+
+        ParkingSpace parkWithMaxAvailableNumber = this.parkingStrategy.choose(this.parksManaged);
 
         ParkingTicket ticket = null;
         try {

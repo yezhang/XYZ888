@@ -1,6 +1,8 @@
 package com.buaa.model;
 
 import com.buaa.exception.NoSpaceParkingException;
+import com.buaa.interfaces.IParkingStrategy;
+import com.buaa.model.strategy.SuperParkStrategy;
 
 import java.util.Collections;
 import java.util.Comparator;
@@ -13,24 +15,20 @@ import java.util.Comparator;
  * To change this template use File | Settings | File Templates.
  */
 public class SuperParkingBoy extends ParkingBoy {
+    private IParkingStrategy parkingStrategy;
+
+    public SuperParkingBoy() {
+        this.parkingStrategy = new SuperParkStrategy();
+    }
 
     @Override
     public ParkingTicket parkCar(Car car) throws NoSpaceParkingException {
-        Parklot park = getParkWithMaxVacancyRate();
+        ParkingSpace park = this.parkingStrategy.choose(this.parksManaged);
         return park.parkCar(car);
     }
 
-    public Parklot getParkWithMaxVacancyRate() {
-        Parklot park = (Parklot) Collections.max(this.parksManaged, new Comparator() {
-
-            @Override
-            public int compare(Object o1, Object o2) {
-                Parklot left = (Parklot) o1;
-                Parklot right = (Parklot) o2;
-                int result =  (int)(left.getVacancyRate()*100 - right.getVacancyRate()*100);
-                return result;
-            }
-        });
+    public ParkingSpace getParkWithMaxVacancyRate() {
+        ParkingSpace park = this.parkingStrategy.choose(this.parksManaged);
 
         return park;
     }

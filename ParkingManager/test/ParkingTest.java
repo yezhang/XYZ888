@@ -18,15 +18,15 @@ public class ParkingTest {
     private Car car;
 
     SmartParkingBoy smartParkingBoy = new SmartParkingBoy();
-    Parklot park1 = new Parklot(1);
-    Parklot park2 = new Parklot(2);
-    Parklot park3 = new Parklot(2);
-    Parklot parkMax = new Parklot(3);
+    ParkingSpace park1 = new ParkingSpace(1);
+    ParkingSpace park2 = new ParkingSpace(2);
+    ParkingSpace park3 = new ParkingSpace(2);
+    ParkingSpace parkMax = new ParkingSpace(3);
 
     @Before
     public void init_parking() {
         this.parkingBoy = new ParkingBoy();
-        Parklot p = new Parklot(100);
+        ParkingSpace p = new ParkingSpace(100);
         this.parkingBoy.addParkToManage(p);
         this.car = new Car("10000");
 
@@ -56,7 +56,7 @@ public class ParkingTest {
     @Test(expected = NoSpaceParkingException.class)
     public void should_return_fail_add_car_to_no_space_parking() throws NoSpaceParkingException {
         parkingBoy = new ParkingBoy();
-        Parklot park = new Parklot(0);
+        ParkingSpace park = new ParkingSpace(0);
         parkingBoy.addParkToManage(park);
 
         parkingBoy.parkCar(car);
@@ -113,7 +113,7 @@ public class ParkingTest {
     @Test
     public void should_park_a_car_in_a_lot_with_max_space() {
         Car c = new Car("");
-        Parklot park = smartParkingBoy.getParkWithMaxSpace();
+        ParkingSpace park = smartParkingBoy.getParkWithMaxSpace();
 
         ParkingTicket ticket = smartParkingBoy.parkCar(c);
 //        park.hasCar(ticket);

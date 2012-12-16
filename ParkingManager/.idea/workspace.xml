@@ -2,13 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4cfea03-7308-441f-85f7-aa7dfed1f175" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\betterSoft\IdeaProjects\XYZ888-master\ParkingManager\src\com\buaa\model\Park.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/buaa/interfaces/IParkingStrategy.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/buaa/model/ParkingSpace.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/buaa/model/Parklot.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/buaa/model/strategy/CommonParkStrategy.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/buaa/model/strategy/SmartParkStrategy.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/buaa/model/strategy/SuperParkStrategy.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/ParkingManagerTest.java" />
+      <change type="DELETED" beforePath="C:\Users\betterSoft\IdeaProjects\XYZ888-master\ParkingManager\out\production\ParkingManager\com\buaa\exception\NoCarException.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\betterSoft\IdeaProjects\XYZ888-master\ParkingManager\out\production\ParkingManager\com\buaa\exception\NoParkException.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\betterSoft\IdeaProjects\XYZ888-master\ParkingManager\out\production\ParkingManager\com\buaa\exception\NoSpaceParkingException.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\betterSoft\IdeaProjects\XYZ888-master\ParkingManager\out\production\ParkingManager\com\buaa\interfaces\IPark.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\betterSoft\IdeaProjects\XYZ888-master\ParkingManager\out\production\ParkingManager\com\buaa\model\Car.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\betterSoft\IdeaProjects\XYZ888-master\ParkingManager\out\production\ParkingManager\com\buaa\model\Park.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\betterSoft\IdeaProjects\XYZ888-master\ParkingManager\out\production\ParkingManager\com\buaa\model\ParkingBoy.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\betterSoft\IdeaProjects\XYZ888-master\ParkingManager\out\production\ParkingManager\com\buaa\model\ParkingTicket.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\betterSoft\IdeaProjects\XYZ888-master\ParkingManager\out\production\ParkingManager\com\buaa\model\SmartParkingBoy$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\betterSoft\IdeaProjects\XYZ888-master\ParkingManager\out\production\ParkingManager\com\buaa\model\SmartParkingBoy.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\betterSoft\IdeaProjects\XYZ888-master\ParkingManager\out\production\ParkingManager\com\buaa\model\SuperParkingBoy$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\betterSoft\IdeaProjects\XYZ888-master\ParkingManager\out\production\ParkingManager\com\buaa\model\SuperParkingBoy.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\betterSoft\IdeaProjects\XYZ888-master\ParkingManager\out\test\ParkingManager\ParkingTest.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\betterSoft\IdeaProjects\XYZ888-master\ParkingManager\out\test\ParkingManager\SuperParkingBoyTest.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParkingManager.iml" afterPath="$PROJECT_DIR$/ParkingManager.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/readme.txt" afterPath="$PROJECT_DIR$/doc/readme.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/buaa/interfaces/IPark.java" afterPath="$PROJECT_DIR$/src/com/buaa/interfaces/IPark.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/buaa/model/ParkingBoy.java" afterPath="$PROJECT_DIR$/src/com/buaa/model/ParkingBoy.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/buaa/model/ParkingManager.java" afterPath="$PROJECT_DIR$/src/com/buaa/model/ParkingManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/buaa/model/SmartParkingBoy.java" afterPath="$PROJECT_DIR$/src/com/buaa/model/SmartParkingBoy.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/buaa/model/SuperParkingBoy.java" afterPath="$PROJECT_DIR$/src/com/buaa/model/SuperParkingBoy.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/ParkingTest.java" afterPath="$PROJECT_DIR$/test/ParkingTest.java" />
@@ -70,64 +87,65 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ParkingManager.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/buaa/model/ParkingManager.java">
+      <file leaf-file-name="CommonParkStrategy.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/buaa/model/strategy/CommonParkStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="32" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="21" column="30" selection-start="611" selection-end="611" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NoCarException.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/buaa/exception/NoCarException.java">
+      <file leaf-file-name="SmartParkStrategy.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/buaa/model/strategy/SmartParkStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="52" selection-start="213" selection-end="237" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="30" column="0" selection-start="990" selection-end="990" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NoParkException.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/buaa/exception/NoParkException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="53" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NoSpaceParkingException.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/buaa/exception/NoSpaceParkingException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="61" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IPark.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/buaa/interfaces/IPark.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="5" selection-start="343" selection-end="343" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="readme.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/doc/readme.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="22" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ParkingBoy.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ParkingBoy.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/buaa/model/ParkingBoy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="41" selection-start="756" selection-end="756" vertical-scroll-proportion="0.40780142">
+            <state line="38" column="33" selection-start="1024" selection-end="1024" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SmartParkingBoy.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/buaa/model/SmartParkingBoy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="30" selection-start="973" selection-end="973" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SuperParkingBoy.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/buaa/model/SuperParkingBoy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="21" selection-start="917" selection-end="917" vertical-scroll-proportion="0.5106383">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ParkingTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/ParkingTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="115" column="69" selection-start="3592" selection-end="3592" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -150,22 +168,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/buaa/NoCarException.java" />
-        <option value="$PROJECT_DIR$/src/com/buaa/model/Parking.java" />
-        <option value="$PROJECT_DIR$/src/com/buaa/model/ParkingTicket.java" />
-        <option value="$PROJECT_DIR$/src/com/buaa/interfaces/IPark.java" />
-        <option value="$PROJECT_DIR$/src/com/buaa/model/Car.java" />
-        <option value="$PROJECT_DIR$/src/com/buaa/model/ParkingBoy.java" />
-        <option value="$PROJECT_DIR$/src/com/buaa/exception/NoCarException.java" />
-        <option value="$PROJECT_DIR$/src/com/buaa/exception/NoSpaceParkingException.java" />
-        <option value="$PROJECT_DIR$/src/com/buaa/model/SmartParkingBoy.java" />
         <option value="$PROJECT_DIR$/test/ParkingTest.java" />
         <option value="$PROJECT_DIR$/src/com/buaa/exception/NoParkException.java" />
         <option value="$PROJECT_DIR$/src/com/buaa/model/Park.java" />
-        <option value="$PROJECT_DIR$/src/com/buaa/model/SuperParkingBoy.java" />
         <option value="$PROJECT_DIR$/doc/UserTask.txt" />
         <option value="$PROJECT_DIR$/test/SuperParkingBoyTest.java" />
         <option value="$PROJECT_DIR$/src/com/buaa/model/ParkingManager.java" />
+        <option value="$PROJECT_DIR$/src/com/buaa/model/Parklet.java" />
+        <option value="$PROJECT_DIR$/src/com/buaa/interfaces/IPark.java" />
+        <option value="$PROJECT_DIR$/src/com/buaa/model/Parklot.java" />
+        <option value="$PROJECT_DIR$/src/com/buaa/interfaces/IParkingStrategy.java" />
+        <option value="$PROJECT_DIR$/src/com/buaa/model/strategy/CommonParkStrategy.java" />
+        <option value="$PROJECT_DIR$/src/com/buaa/model/strategy/SmartParkStrategy.java" />
+        <option value="$PROJECT_DIR$/src/com/buaa/model/strategy/SuperParkStrategy.java" />
+        <option value="$PROJECT_DIR$/src/com/buaa/model/ParkingBoy.java" />
+        <option value="$PROJECT_DIR$/src/com/buaa/model/SmartParkingBoy.java" />
+        <option value="$PROJECT_DIR$/src/com/buaa/model/SuperParkingBoy.java" />
       </list>
     </option>
   </component>
@@ -273,7 +291,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="interfaces" />
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="strategy" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -295,7 +317,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="exception" />
+              <option name="myItemId" value="interfaces" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ParkingManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ParkingManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="buaa" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -359,7 +399,14 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
   </component>
-  <component name="RunManager" selected="JUnit.SuperParkingBoyTest.should_park_a_car_in_a_lot_with_max_vacancy_rate">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\betterSoft\IdeaProjects\XYZ888-master\ParkingManager\src\com\buaa\interfaces" />
+      <recent name="C:\Users\betterSoft\IdeaProjects\XYZ888-master\ParkingManager\test" />
+      <recent name="C:\Users\betterSoft\IdeaProjects\XYZ888-master\ParkingManager\src\com\buaa\model" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.SuperParkingBoyTest">
     <configuration default="false" name="SuperParkingBoyTest" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="ParkingManager" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -611,7 +658,13 @@
       </option>
       <envs />
       <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -657,7 +710,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -673,7 +726,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23395613" sideWeight="0.6764228" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23964256" sideWeight="0.6764228" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32357723" sideWeight="0.71408045" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -740,26 +793,112 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/junit/framework/Assert.class">
+    <entry file="file://$PROJECT_DIR$/src/com/buaa/exception/NoSpaceParkingException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="59" selection-start="3640" selection-end="3648" vertical-scroll-proportion="-5.96" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/buaa/model/ParkingTicket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="17" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0">
+        <state line="9" column="61" selection-start="246" selection-end="246" vertical-scroll-proportion="0.35264054">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/buaa/model/Car.java">
+    <entry file="file://$PROJECT_DIR$/doc/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="29" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0" />
+        <state line="7" column="22" selection-start="245" selection-end="245" vertical-scroll-proportion="0.274276">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/buaa/model/ParkingManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="12" selection-start="300" selection-end="300" vertical-scroll-proportion="0.53014183">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/SuperParkingBoyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="54" selection-start="1833" selection-end="1833" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/ParkingManagerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="32" selection-start="802" selection-end="802" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/buaa/interfaces/IPark.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="6" selection-start="592" selection-end="592" vertical-scroll-proportion="0.5877342">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/buaa/model/ParkingSpace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="47" selection-start="590" selection-end="590" vertical-scroll-proportion="0.41226575">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/buaa/model/Parklot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="8" selection-start="546" selection-end="546" vertical-scroll-proportion="0.68654174">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/buaa/interfaces/IParkingStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="66" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/buaa/model/strategy/SuperParkStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="29" selection-start="460" selection-end="460" vertical-scroll-proportion="0.25553662">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#608#967#0" expanded="true" />
+            <element signature="e#956#957#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/buaa/model/strategy/SmartParkStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="0" selection-start="990" selection-end="990" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/buaa/model/strategy/CommonParkStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="30" selection-start="611" selection-end="611" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/buaa/model/ParkingBoy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="33" selection-start="1024" selection-end="1024" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/ParkingTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="0" selection-start="3644" selection-end="3644" vertical-scroll-proportion="0.0">
+        <state line="115" column="69" selection-start="3592" selection-end="3592" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -768,87 +907,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/buaa/model/SmartParkingBoy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="43" selection-start="634" selection-end="697" vertical-scroll-proportion="0.8821918">
+        <state line="33" column="30" selection-start="973" selection-end="973" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#476#765#0" expanded="true" />
-            <element signature="e#754#755#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.6.0_16/src.zip!/java/util/Collections.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="683" column="0" selection-start="28577" selection-end="28577" vertical-scroll-proportion="0.27319586">
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/buaa/model/SuperParkingBoy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="60" selection-start="901" selection-end="901" vertical-scroll-proportion="0.59375">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#645#980#0" expanded="true" />
-            <element signature="e#969#970#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/SuperParkingBoyTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="23" selection-start="1711" selection-end="1711" vertical-scroll-proportion="0.6505682">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/buaa/model/ParkingManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="32" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/buaa/exception/NoCarException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="52" selection-start="213" selection-end="237" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/buaa/exception/NoParkException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="53" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/buaa/exception/NoSpaceParkingException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="61" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/buaa/interfaces/IPark.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="5" selection-start="343" selection-end="343" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="22" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/buaa/model/ParkingBoy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="41" selection-start="756" selection-end="756" vertical-scroll-proportion="0.40780142">
+        <state line="31" column="21" selection-start="917" selection-end="917" vertical-scroll-proportion="0.5106383">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
