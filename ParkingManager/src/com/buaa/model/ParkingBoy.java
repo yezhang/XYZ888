@@ -22,14 +22,14 @@ public class ParkingBoy implements IPark {
         this.parksManaged = new ArrayList();
     }
 
-    public void addParkToManage(Park p) {
+    public void addParkToManage(Parklot p) {
         if (parksManaged == null) {
             parksManaged = new ArrayList(0);
         }
         parksManaged.add(p);
     }
 
-    public void removeParkManaged(Park p) {
+    public void removeParkManaged(Parklot p) {
         if (parksManaged == null) {
             return;
         }
@@ -40,11 +40,11 @@ public class ParkingBoy implements IPark {
     @Override
     public ParkingTicket parkCar(Car car) throws NoSpaceParkingException {
         Iterator it = this.parksManaged.iterator();
-        Park p = null;
+        Parklot p = null;
         boolean parked = false;
         ParkingTicket ticket = null;
         while (it.hasNext()) {
-            p = (Park) it.next();
+            p = (Parklot) it.next();
             if (p.getAvailableNumber() > 0) {
                 ticket = p.parkCar(car);
                 parked = true;
@@ -61,9 +61,9 @@ public class ParkingBoy implements IPark {
     public int getAvailableNumber() {
         int availableNumber = 0;
         Iterator it = this.parksManaged.iterator();
-        Park p = null;
+        Parklot p = null;
         while (it.hasNext()) {
-            p = (Park) it.next();
+            p = (Parklot) it.next();
             availableNumber += p.getAvailableNumber();
         }
         return availableNumber;
@@ -72,11 +72,11 @@ public class ParkingBoy implements IPark {
     @Override
     public Car getCarByTicket(ParkingTicket ticket) throws NoCarException {
         Iterator it = this.parksManaged.iterator();
-        Park p = null;
+        Parklot p = null;
         Car car = null;
         boolean carIsGetted = false;
         while (it.hasNext()) {
-            p = (Park) it.next();
+            p = (Parklot) it.next();
             if(p.hasCar(ticket)){
                 car =  p.getCarByTicket(ticket);
                 carIsGetted = true;

@@ -2,10 +2,8 @@ package com.buaa.model;
 
 import com.buaa.exception.NoSpaceParkingException;
 
-import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.Iterator;
 
 /**
  * Created with IntelliJ IDEA.
@@ -16,30 +14,21 @@ import java.util.Iterator;
  */
 public class SmartParkingBoy extends ParkingBoy {
 
-    public Park getParkWithMaxSpace(){
-        Park parkWithMaxAvailableNumber = (Park) Collections.max(this.parksManaged, new Comparator() {
+    public Parklot getParkWithMaxSpace(){
+        Parklot parkWithMaxAvailableNumber = (Parklot) Collections.max(this.parksManaged, new Comparator() {
             @Override
             public int compare(Object o1, Object o2) {
-                Park left = (Park) o1;
-                Park right = (Park) o2;
+                Parklot left = (Parklot) o1;
+                Parklot right = (Parklot) o2;
                 return left.getAvailableNumber() - right.getAvailableNumber();
             }
         });
         return parkWithMaxAvailableNumber;
     }
-
-<<<<<<< HEAD
-
-
-    @Override
+     @Override
     public ParkingTicket parkCar(Car car) throws NoSpaceParkingException {
-=======
-    @Override
-    public ParkingTicket parkCar(Car car) throws NoSpaceParkingException {
-        Iterator it = this.parksManaged.iterator();
 
->>>>>>> decce5794ab1d38c9d17aa95f37dc62432e8cc5e
-        Park parkWithMaxAvailableNumber = getParkWithMaxSpace();
+        Parklot parkWithMaxAvailableNumber = getParkWithMaxSpace();
 
         ParkingTicket ticket = null;
         try {

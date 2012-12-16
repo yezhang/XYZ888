@@ -16,16 +16,17 @@ public class SuperParkingBoy extends ParkingBoy {
 
     @Override
     public ParkingTicket parkCar(Car car) throws NoSpaceParkingException {
-        return super.parkCar(car);    //To change body of overridden methods use File | Settings | File Templates.
+        Parklot park = getParkWithMaxVacancyRate();
+        return park.parkCar(car);
     }
 
-    public Park getParkWithMaxVacancyRate() {
-        Park park = (Park) Collections.max(this.parksManaged, new Comparator() {
+    public Parklot getParkWithMaxVacancyRate() {
+        Parklot park = (Parklot) Collections.max(this.parksManaged, new Comparator() {
 
             @Override
             public int compare(Object o1, Object o2) {
-                Park left = (Park) o1;
-                Park right = (Park) o2;
+                Parklot left = (Parklot) o1;
+                Parklot right = (Parklot) o2;
                 int result =  (int)(left.getVacancyRate()*100 - right.getVacancyRate()*100);
                 return result;
             }
