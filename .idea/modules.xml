@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ProjectModuleManager">
@@ -7,3 +8,14 @@
   </component>
 </project>
 
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/hello/src/Hello.iml" filepath="$PROJECT_DIR$/hello/src/Hello.iml" />
+    </modules>
+  </component>
+</project>
+
+>>>>>>> decce5794ab1d38c9d17aa95f37dc62432e8cc5e

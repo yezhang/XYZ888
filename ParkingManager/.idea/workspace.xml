@@ -58,10 +58,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ParkingManager.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ParkingManager.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/buaa/model/ParkingManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="4" selection-start="300" selection-end="300" vertical-scroll-proportion="0.6443299">
+            <state line="7" column="32" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NoCarException.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/buaa/exception/NoCarException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="52" selection-start="213" selection-end="237" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NoParkException.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/buaa/exception/NoParkException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="53" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NoSpaceParkingException.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/buaa/exception/NoSpaceParkingException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="61" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IPark.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/buaa/interfaces/IPark.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="29" selection-start="495" selection-end="509" vertical-scroll-proportion="0.548552">
               <folding />
             </state>
           </provider>
@@ -650,7 +686,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23395613" sideWeight="0.6764228" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32357723" sideWeight="0.71408045" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32357723" sideWeight="0.71408045" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -733,35 +769,9 @@
         <state line="12" column="29" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/buaa/interfaces/IPark.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="29" selection-start="495" selection-end="509" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/buaa/model/ParkingBoy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="13" selection-start="444" selection-end="444" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/buaa/exception/NoCarException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="52" selection-start="213" selection-end="237" vertical-scroll-proportion="0.53350514">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/buaa/exception/NoSpaceParkingException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="61" selection-start="246" selection-end="246" vertical-scroll-proportion="0.53350514">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/buaa/exception/NoParkException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="53" selection-start="240" selection-end="240" vertical-scroll-proportion="0.53350514">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/ParkingTest.java">
@@ -827,7 +837,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/buaa/model/ParkingManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="4" selection-start="300" selection-end="300" vertical-scroll-proportion="0.6443299">
+        <state line="7" column="32" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/buaa/exception/NoCarException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="52" selection-start="213" selection-end="237" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/buaa/exception/NoParkException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="53" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/buaa/exception/NoSpaceParkingException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="61" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/buaa/interfaces/IPark.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="29" selection-start="495" selection-end="509" vertical-scroll-proportion="0.548552">
           <folding />
         </state>
       </provider>

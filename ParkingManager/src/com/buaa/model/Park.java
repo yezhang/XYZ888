@@ -56,9 +56,12 @@ public class Park implements IPark {
         }
         return false;
     }
+<<<<<<< HEAD
 
     public double getVacancyRate() {
         double vacancyRate = 1.0*this.getAvailableNumber()/this.capacity;
         return vacancyRate;
     }
+=======
+>>>>>>> decce5794ab1d38c9d17aa95f37dc62432e8cc5e
 }

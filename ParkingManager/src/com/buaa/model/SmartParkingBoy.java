@@ -28,10 +28,17 @@ public class SmartParkingBoy extends ParkingBoy {
         return parkWithMaxAvailableNumber;
     }
 
+<<<<<<< HEAD
 
 
     @Override
     public ParkingTicket parkCar(Car car) throws NoSpaceParkingException {
+=======
+    @Override
+    public ParkingTicket parkCar(Car car) throws NoSpaceParkingException {
+        Iterator it = this.parksManaged.iterator();
+
+>>>>>>> decce5794ab1d38c9d17aa95f37dc62432e8cc5e
         Park parkWithMaxAvailableNumber = getParkWithMaxSpace();
 
         ParkingTicket ticket = null;

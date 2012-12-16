@@ -120,6 +120,9 @@ public class ParkingTest {
 
         Assert.assertEquals(true, park.hasCar(ticket));
     }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> decce5794ab1d38c9d17aa95f37dc62432e8cc5e
 }
