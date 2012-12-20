@@ -10,7 +10,9 @@ import java.util.List;
  * To change this template use File | Settings | File Templates.
  */
 public class ParkingManager extends ParkingBoy {
-    private List<ParkingBoy> parkingBoys;
 
 
+    public ParkingTicket letParkingBoyToParkCar(ParkingBoy parkingBoy, Car car) {
+        return parkingBoy.parkCar(car);
+    }
 }

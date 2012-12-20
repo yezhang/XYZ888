@@ -15,6 +15,7 @@ import com.buaa.model.ParkingTicket;
 public interface IPark {
     public ParkingTicket parkCar(Car car) throws NoSpaceParkingException;
     public int getAvailableNumber();
+    public int getCapacity();
     public Car getCarByTicket(ParkingTicket ticket) throws NoCarException;
-    public void report();
+    public void report(String indent);
 }

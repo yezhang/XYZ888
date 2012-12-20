@@ -20,10 +20,12 @@ import java.util.List;
 public class ParkingBoy implements IPark {
     protected List parksManaged;
     protected IParkingStrategy parkingStrategy;
+    private List<ParkingBoy> parkingBoys;
 
 
     public ParkingBoy() {
         this.parksManaged = new ArrayList();
+        this.parkingBoys = new ArrayList<ParkingBoy>();
         parkingStrategy = new CommonParkStrategy();
     }
 
@@ -46,12 +48,23 @@ public class ParkingBoy implements IPark {
     public ParkingTicket parkCar(Car car) throws NoSpaceParkingException {
         boolean parked = false;
         ParkingTicket ticket = null;
-        ParkingSpace parkingSpace = this.parkingStrategy.choose(this.parksManaged);
-        if (parkingSpace != null) {
-            ticket = parkingSpace.parkCar(car);
-            parked = true;
+        if (this.getAvailableNumber() > 0) {
+            ParkingSpace parkingSpace = this.parkingStrategy.choose(this.parksManaged);
+            if (parkingSpace != null) {
+                ticket = parkingSpace.parkCar(car);
+                parked = true;
+            }
         }
-
+        ParkingBoy parkingBoy = null;
+        for (int i = 0; parked == false && i < this.parkingBoys.size(); i++) {
+            parkingBoy = this.parkingBoys.get(i);
+            if (parkingBoy.getAvailableNumber() > 0) {
+                parkingBoy.parkCar(car);
+                parked = true;
+            } else {
+                continue;
+            }
+        }
         if (parked == false) {
             throw new NoSpaceParkingException();
         }
@@ -68,6 +81,18 @@ public class ParkingBoy implements IPark {
             availableNumber += p.getAvailableNumber();
         }
         return availableNumber;
+    }
+
+    @Override
+    public int getCapacity() {
+        int capacity = 0;
+        Iterator it = this.parksManaged.iterator();
+        ParkingSpace p = null;
+        while (it.hasNext()) {
+            p = (ParkingSpace) it.next();
+            capacity += p.getCapacity();
+        }
+        return capacity;
     }
 
     @Override
@@ -92,8 +117,51 @@ public class ParkingBoy implements IPark {
         return car;
     }
 
-    @Override
-    public void report() {
-        //To change body of implemented methods use File | Settings | File Templates.
+    public void addParkingBoyToManage(ParkingBoy parkingBoy) {
+        if (this.parkingBoys == null) {
+            this.parkingBoys = new ArrayList<ParkingBoy>();
+        }
+        this.parkingBoys.add(parkingBoy);
     }
+
+    public void removeManagedParkingBoy(ParkingBoy parkingBoy) {
+        if (this.parkingBoys == null || this.parkingBoys.size() < 1) {
+            return;
+        }
+        if (this.parkingBoys.contains(parkingBoy)) {
+            this.parkingBoys.remove(parkingBoy);
+        }
+    }
+
+    @Override
+    public void report(String indent) {
+        int totalCapacity = 0;
+        int totalAvailableNumber = 0;
+        ParkingSpace parkingSpace = null;
+        for (int i = 0; i < this.parksManaged.size(); i++) {
+            if (this.parksManaged.get(i) instanceof ParkingSpace) {
+                parkingSpace = (ParkingSpace) this.parksManaged.get(i);
+                totalAvailableNumber += parkingSpace.getAvailableNumber();
+                totalCapacity += parkingSpace.getCapacity();
+                System.out.println(indent + "停车场编号：" + parkingSpace.hashCode());
+                parkingSpace.report(indent + "   ");
+            }
+        }
+        ParkingBoy parkingBoy = null;
+        if (this.parkingBoys != null) {
+            for (int i = 0; i < this.parkingBoys.size(); i++) {
+                if (this.parkingBoys.get(i) instanceof ParkingBoy) {
+                    parkingBoy = this.parkingBoys.get(i);
+                    totalAvailableNumber += parkingBoy.getAvailableNumber();
+                    totalCapacity += parkingBoy.getCapacity();
+                    System.out.println("停车仔编号：" + parkingBoy.hashCode());
+                    parkingBoy.report("    ");
+                }
+
+            }
+        }
+        System.out.println(indent + "Total车位数：" + totalCapacity);
+        System.out.println(indent + "Total空位数：" + totalAvailableNumber);
+    }
+
 }

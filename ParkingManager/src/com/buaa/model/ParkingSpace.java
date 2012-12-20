@@ -67,7 +67,8 @@ public class ParkingSpace implements IPark {
     }
 
     @Override
-    public void report() {
-        //To change body of implemented methods use File | Settings | File Templates.
+    public void report(String indent) {
+        System.out.println(indent + "车位数：" + getCapacity());
+        System.out.println(indent + "空位数：" + getAvailableNumber());
     }
 }
