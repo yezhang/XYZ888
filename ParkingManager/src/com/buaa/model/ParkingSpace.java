@@ -50,19 +50,24 @@ public class ParkingSpace implements IPark {
         }
     }
 
-    public boolean hasCar(ParkingTicket ticket){
-        if(this.parkingCarMap.containsKey(ticket)){
+    public boolean hasCar(ParkingTicket ticket) {
+        if (this.parkingCarMap.containsKey(ticket)) {
             return true;
         }
         return false;
     }
 
     public double getVacancyRate() {
-        double vacancyRate = 1.0*this.getAvailableNumber()/this.capacity;
+        double vacancyRate = 1.0 * this.getAvailableNumber() / this.capacity;
         return vacancyRate;
     }
 
-    public int getCapacity(){
+    public int getCapacity() {
         return this.capacity;
+    }
+
+    @Override
+    public void report() {
+        //To change body of implemented methods use File | Settings | File Templates.
     }
 }

@@ -20,14 +20,15 @@ public class Car {
 
     private ParkingTicket ticket;
 
-    public Car(){
+    public Car() {
         this.carId = "";
     }
-    public Car(String carId){
+
+    public Car(String carId) {
         this.carId = carId;
     }
 
-    public String getCarId(){
+    public String getCarId() {
         return this.carId;
     }
 

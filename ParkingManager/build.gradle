@@ -1,0 +1,63 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+sourceCompatibility = 1.6
+
+archiveBaseName = 'parkingLotsModel'
+
+task publishJar(type: Jar){
+    from 'src'
+    baseName = 'parkingLotsModel'
+    into('libs'){
+        from configurations.runtime
+    }
+
+    println publishJar.archiveName
+}
+
+
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'parkingLotsModel', 'Implementation-Version': 1.0
+    }
+    baseName = 'parkingLotsModel'
+}
+
+repositories {
+    mavenCentral()
+}
+
+uploadArchives {
+    repositories {
+        flatDir {
+            dirs 'repos'
+        }
+    }
+}
+dependencies {
+    [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+    testCompile group: 'junit', name: 'junit', version: '4.+'
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src/com'
+        }
+        resources {
+            srcDir 'src/resources'
+        }
+    }
+    test {
+        java {
+            srcDir 'test'
+        }
+        resources {
+            srcDir 'test/resources'
+        }
+    }
+}
+
+clean {
+    delete 'build', 'out'
+}

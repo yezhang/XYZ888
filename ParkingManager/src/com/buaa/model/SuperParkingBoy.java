@@ -15,8 +15,6 @@ import java.util.Comparator;
  * To change this template use File | Settings | File Templates.
  */
 public class SuperParkingBoy extends ParkingBoy {
-    private IParkingStrategy parkingStrategy;
-
     public SuperParkingBoy() {
         this.parkingStrategy = new SuperParkStrategy();
     }

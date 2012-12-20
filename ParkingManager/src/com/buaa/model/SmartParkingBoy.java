@@ -16,21 +16,17 @@ import java.util.Iterator;
  * To change this template use File | Settings | File Templates.
  */
 public class SmartParkingBoy extends ParkingBoy {
-    private IParkingStrategy parkingStrategy;
-
     public SmartParkingBoy() {
         this.parkingStrategy = new SmartParkStrategy();
     }
 
-    public ParkingSpace getParkWithMaxSpace(){
+    public ParkingSpace getParkWithMaxSpace() {
         ParkingSpace parkWithMaxAvailableNumber = this.parkingStrategy.choose(this.parksManaged);
         return parkWithMaxAvailableNumber;
     }
 
     @Override
     public ParkingTicket parkCar(Car car) throws NoSpaceParkingException {
-        Iterator it = this.parksManaged.iterator();
-
         ParkingSpace parkWithMaxAvailableNumber = this.parkingStrategy.choose(this.parksManaged);
 
         ParkingTicket ticket = null;
@@ -38,8 +34,8 @@ public class SmartParkingBoy extends ParkingBoy {
             ticket = parkWithMaxAvailableNumber.parkCar(car);
         } catch (NoSpaceParkingException ex) {
             throw ex;
-        }finally{
-             return ticket;
+        } finally {
+            return ticket;
         }
     }
 }

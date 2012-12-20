@@ -47,7 +47,7 @@ public class ParkingBoy implements IPark {
         boolean parked = false;
         ParkingTicket ticket = null;
         ParkingSpace parkingSpace = this.parkingStrategy.choose(this.parksManaged);
-        if(parkingSpace != null){
+        if (parkingSpace != null) {
             ticket = parkingSpace.parkCar(car);
             parked = true;
         }
@@ -78,17 +78,22 @@ public class ParkingBoy implements IPark {
         boolean carIsGetted = false;
         while (it.hasNext()) {
             p = (ParkingSpace) it.next();
-            if(p.hasCar(ticket)){
-                car =  p.getCarByTicket(ticket);
+            if (p.hasCar(ticket)) {
+                car = p.getCarByTicket(ticket);
                 carIsGetted = true;
                 break;
             }
         }
 
-        if(carIsGetted == false){
+        if (carIsGetted == false) {
             throw new NoCarException();
         }
 
         return car;
+    }
+
+    @Override
+    public void report() {
+        //To change body of implemented methods use File | Settings | File Templates.
     }
 }

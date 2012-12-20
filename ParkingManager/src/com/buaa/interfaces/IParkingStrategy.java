@@ -1,7 +1,6 @@
 package com.buaa.interfaces;
 
 import com.buaa.model.ParkingSpace;
-import com.buaa.model.Parklot;
 
 import java.util.List;
 
