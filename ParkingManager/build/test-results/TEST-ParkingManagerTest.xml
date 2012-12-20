@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite errors="0" failures="0" hostname="betterSoft-PC" name="ParkingManagerTest" tests="1" time="0.227" timestamp="2012-12-20T14:58:55">
+<testsuite errors="0" failures="0" hostname="betterSoft-PC" name="ParkingManagerTest" tests="7" time="0.304" timestamp="2012-12-20T17:11:47">
   <properties />
-  <testcase classname="ParkingManagerTest" name="should_park_a_car_in_a_lot_owned_by_manager" time="0.036" />
-  <system-out><![CDATA[]]></system-out>
+  <testcase classname="ParkingManagerTest" name="should_park_a_car_in_a_lot_owned_by_manager" time="0.038" />
+  <testcase classname="ParkingManagerTest" name="should_report_parkingManager_parkingSpaceInfo" time="0.0080" />
+  <testcase classname="ParkingManagerTest" name="should_report_parkingBoy_parkingSpaceInfo" time="0.0010" />
+  <testcase classname="ParkingManagerTest" name="should_command_smartParkingBoy_to_park_a_car" time="0.0030" />
+  <testcase classname="ParkingManagerTest" name="should_command_parkingBoy_to_get_a_car" time="0.0" />
+  <testcase classname="ParkingManagerTest" name="should_command_parkingBoy_to_park_a_car" time="0.0" />
+  <testcase classname="ParkingManagerTest" name="should_command_superParkingBoy_to_park_a_car" time="0.0020" />
+  <system-out><![CDATA[停车场编号：5218268
+   车位数：1
+   空位数：1
+停车仔编号：11299397
+    停车场编号：24446859
+       车位数：1
+       空位数：0
+    Total车位数：1
+    Total空位数：0
+Total车位数：2
+Total空位数：1
+停车场编号：1696092
+   车位数：1
+   空位数：0
+Total车位数：1
+Total空位数：0
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
